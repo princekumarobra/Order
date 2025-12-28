@@ -3,273 +3,320 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>StudyKit India | Student Stationery</title>
+<title>Bihar Tilkut Gharana | शुद्ध बिहारी तिलकुट</title>
 
 <style>
-*{box-sizing:border-box}
 body{
   margin:0;
   font-family:Arial, Helvetica, sans-serif;
-  background:#f4f6f9;
-  color:#1f2937;
+  background:#f6f6f6;
 }
 
 /* HEADER */
-.header{
-  background:linear-gradient(135deg,#1e3c72,#2a5298);
+header{
+  background:#8b0000;
   color:#fff;
-  padding:34px 16px;
   text-align:center;
+  padding:18px;
 }
-.header h1{margin:0;font-size:40px;font-weight:900}
-.header p{margin-top:8px;font-size:20px;font-weight:900}
+header h1{
+  margin:0;
+  font-size:28px;
+  font-weight:900;
+}
+header p{
+  margin-top:8px;
+  font-size:17px;
+  font-weight:800;
+}
 
-/* CONTAINER */
-.container{max-width:1100px;margin:auto;padding:14px}
-
-/* SECTION */
-.section{
+/* INFO */
+.info{
   background:#fff;
-  border-radius:18px;
-  padding:28px;
-  margin:22px 0;
-  box-shadow:0 10px 28px rgba(0,0,0,0.08);
+  margin:12px;
+  padding:16px;
+  border-radius:16px;
+  font-weight:900;
+  box-shadow:0 6px 16px rgba(0,0,0,.1);
 }
+.info span{display:block;margin-bottom:6px;}
 
-.big{font-size:26px;font-weight:900;color:#1e3c72}
-.bold{font-weight:900}
-
-/* ===== KIT BOX ===== */
-.kits{
+/* PRODUCTS */
+.products{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:20px;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  padding:12px;
 }
-.kit{
-  background:#fbfdff;
-  border-radius:18px;
-  padding:22px;
+.product{
+  background:#fff;
+  border-radius:20px;
+  padding:16px;
   text-align:center;
-  border:3px solid #dbe6ff;
-  box-shadow:0 12px 26px rgba(30,60,114,0.15);
+  box-shadow:0 8px 18px rgba(0,0,0,.15);
 }
-.kit h3{
-  font-size:22px;
-  font-weight:900;
-  color:#1e3c72;
+.product img{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  border:4px solid #ff9800;
+  object-fit:cover;
 }
-.kit ul{
-  text-align:left;
-  padding-left:18px;
+.product h3{
+  margin:12px 0 8px;
+  font-size:20px;
   font-weight:900;
-}
-.kit li{margin-bottom:6px}
-.price{
-  font-size:34px;
-  font-weight:900;
-  color:#e63946;
-  background:#fff0f0;
-  padding:6px 14px;
-  border-radius:10px;
-  display:inline-block;
 }
 
-/* ===== STATS BOX ===== */
-.stats-new{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-  gap:18px;
-}
-.stat-card{
-  background:linear-gradient(135deg,#ffffff,#f1f6ff);
-  border-top:6px solid #1e3c72;
-  border-radius:18px;
-  padding:22px;
-  text-align:center;
-  box-shadow:0 10px 22px rgba(30,60,114,0.15);
-}
-.stat-card span{font-size:36px}
-.stat-card p{
-  margin:6px 0 0;
+/* PRICE */
+.price span{
+  display:block;
   font-size:17px;
   font-weight:900;
-  color:#1e3c72;
+  color:#b71c1c;
+  margin:4px 0;
+}
+
+/* ORDER BUTTON */
+.order-btn{
+  margin-top:10px;
+  width:100%;
+  padding:14px;
+  background:#25D366;
+  color:#fff;
+  font-size:17px;
+  font-weight:900;
+  border:none;
+  border-radius:16px;
+  animation:blink 1.2s infinite;
+  cursor:pointer;
+}
+
+/* BLINK CENTER TEXT */
+.blink-offer{
+  text-align:center;
+  font-size:18px;
+  font-weight:900;
+  margin:14px 0;
+  animation:blackwhite 1s infinite;
+}
+@keyframes blackwhite{
+  0%{color:#000;}
+  50%{color:#fff;background:#000;padding:6px 14px;border-radius:14px;}
+  100%{color:#000;}
+}
+
+/* STATS */
+.stats{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+  padding:12px;
+}
+.stat{
+  background:#fff3cd;
+  border-radius:14px;
+  padding:14px;
+  text-align:center;
+  font-weight:900;
 }
 
 /* FORM */
+.form-box{
+  background:#fff;
+  margin:12px;
+  padding:20px;
+  border-radius:20px;
+  box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+.form-box h2{
+  margin-top:0;
+  font-size:24px;
+  font-weight:900;
+}
 input, textarea, select{
   width:100%;
   padding:14px;
-  margin:10px 0;
+  margin-bottom:12px;
+  border-radius:14px;
+  border:1px solid #ccc;
+  font-size:16px;
+  font-weight:700;
+}
+
+/* POLICY */
+.policy{
+  background:#fff3cd;
+  border:2px dashed #ff9800;
+  padding:14px;
+  border-radius:14px;
+  font-size:15px;
   font-weight:900;
-  border-radius:10px;
-  border:2px solid #dbe6ff;
+  margin:14px 0;
 }
 
-/* PAYMENT RULE */
-.rule{
-  background:#fff5f5;
-  border:3px dashed #e63946;
-}
-
-/* BUTTON */
-@keyframes blink{
-  0%{box-shadow:0 0 0 rgba(37,211,102,.4)}
-  50%{box-shadow:0 0 22px rgba(37,211,102,.9)}
-  100%{box-shadow:0 0 0 rgba(37,211,102,.4)}
-}
-.btn{
+/* WHATSAPP */
+.whatsapp{
   width:100%;
+  padding:16px;
   background:#25D366;
   color:#fff;
-  border:none;
-  padding:18px;
-  font-size:20px;
+  font-size:18px;
   font-weight:900;
-  border-radius:14px;
+  border:none;
+  border-radius:18px;
   cursor:pointer;
-  animation:blink 1.4s infinite;
+  animation:blink 1.1s infinite;
 }
 
-/* FOOTER */
-.footer{
-  text-align:center;
-  padding:18px;
-  font-size:14px;
-  font-weight:700;
-  color:#6b7280;
-  background:#eef2f7;
+/* FLOAT */
+.float{
+  position:fixed;
+  bottom:16px;
+  right:16px;
+  background:#25D366;
+  color:#fff;
+  padding:14px 18px;
+  border-radius:30px;
+  font-weight:900;
+  box-shadow:0 6px 16px rgba(0,0,0,.3);
+}
+
+/* POPUP */
+.popup{
+  position:fixed;
+  top:20px;
+  left:50%;
+  transform:translateX(-50%);
+  background:#000;
+  color:#fff;
+  padding:12px 20px;
+  border-radius:20px;
+  font-weight:900;
+  display:none;
+  z-index:999;
+}
+
+@keyframes blink{
+  0%,100%{opacity:1}
+  50%{opacity:.6}
 }
 </style>
 </head>
 
 <body>
 
-<div class="header">
-  <h1>StudyKit India</h1>
-  <p>📚 Student Stationery Home Delivery</p>
+<div class="popup" id="popup">🔥 Premium Khoya Tilkut • Limited Stock 🔥</div>
+
+<header>
+  <h1>🍘 Bihar Tilkut Gharana 🍘</h1>
+  <p>शुद्ध बिहारी तिलकुट • ऑर्डर के बाद फ्रेश</p>
+</header>
+
+<div class="info">
+  <span>✅ Premium Khoya Tilkut</span>
+  <span>❌ सस्ता माल / केमिकल नहीं</span>
+  <span>✔ Limited Daily Stock</span>
 </div>
 
-<div class="container">
-
-<!-- INTRO -->
-<div class="section">
-  <p class="big">🔥 EK BAAR LO – PADHAI KA TENSION KHATAM 🔥</p>
-  <p class="bold">School & exam ke liye zaroori stationery ka complete pack, seedha ghar tak delivery.</p>
-</div>
-
-<!-- KIT SECTION -->
-<div class="section">
-  <p class="big">🎒 AVAILABLE STATIONERY KITS</p>
-
-  <div class="kits">
-    <div class="kit">
-      <h3>🟦 STARTER KIT</h3>
-      <ul>
-        <li>✏️ 8 Blue Pens</li>
-        <li>📓 1 Notebook</li>
-        <li>🧽 Eraser + Sharpener</li>
-      </ul>
-      <p class="price">💰 ₹299</p>
+<section class="products">
+  <div class="product">
+    <img src="images.jpeg">
+    <h3>खोया तिलकुट (Premium)</h3>
+    <div class="price">
+      <span>💎 500g – ₹349</span>
+      <span>⭐ 1kg – ₹549 (Best Value)</span>
     </div>
-
-    <div class="kit">
-      <h3>⭐ BEST SELLER KIT</h3>
-      <ul>
-        <li>✏️ 10 Blue Pens</li>
-        <li>📓 1 Notebook</li>
-        <li>📐 Geometry Box</li>
-        <li>🧽 Eraser + Sharpener</li>
-      </ul>
-      <p class="price">💰 ₹399</p>
-    </div>
-
-    <div class="kit">
-      <h3>💎 VALUE PACK</h3>
-      <ul>
-        <li>✏️ 15 Blue Pens</li>
-        <li>📓 2 Notebooks</li>
-        <li>📐 Geometry Box</li>
-        <li>📏 Scale + Eraser + Sharpener</li>
-      </ul>
-      <p class="price">💰 ₹499</p>
-    </div>
+    <button class="order-btn" onclick="scrollToForm()">ORDER NOW</button>
   </div>
-</div>
 
-<!-- STATS -->
-<div class="section">
-  <div class="stats-new">
-    <div class="stat-card"><span>🚚</span><p>India Post Delivery</p></div>
-    <div class="stat-card"><span>🔒</span><p>100% Prepaid Only</p></div>
-    <div class="stat-card"><span>⭐</span><p>Quality Checked</p></div>
-    <div class="stat-card"><span>📦</span><p>Dispatch in 24 Hours</p></div>
-  </div>
-</div>
-
-<!-- ORDER FORM -->
-<div class="section">
-  <p class="big">🛒 ORDER & DELIVERY DETAILS</p>
-
-  <form id="orderForm">
-    <select id="kit" required>
-      <option value="">Select Kit</option>
-      <option>Starter Kit ₹299</option>
-      <option>Best Seller Kit ₹399</option>
-      <option>Value Pack ₹499</option>
-    </select>
-
-    <input type="text" id="name" placeholder="Full Name" required>
-    <input type="tel" id="mobile" placeholder="Mobile Number" required>
-
-    <!-- TEXT INPUTS -->
-    <input type="text" id="state" placeholder="State (e.g. Bihar)" required>
-    <input type="text" id="district" placeholder="District (e.g. Aurangabad)" required>
-    <input type="text" id="block" placeholder="Block / City / Village" required>
-
-    <textarea id="address" placeholder="House no, road, landmark" required></textarea>
-    <input type="text" id="pincode" placeholder="6 Digit Pincode" maxlength="6" required>
-    <textarea id="comment" placeholder="Any message / review (optional)"></textarea>
-
-    <div class="section rule">
-      <p class="bold">⚠️ 100% PREPAID ONLY</p>
-      <p class="bold">Payment hone ke baad hi dispatch hoga</p>
+  <div class="product">
+    <img src="images.jpeg">
+    <h3>तिल + चीनी</h3>
+    <div class="price">
+      <span>💎 500g – ₹329</span>
+      <span>📦 1kg – ₹529</span>
     </div>
+    <button class="order-btn" onclick="scrollToForm()">ORDER NOW</button>
+  </div>
+</section>
 
-    <button class="btn" type="submit">📲 CONFIRM ORDER ON WHATSAPP</button>
-  </form>
-</div>
+<div class="blink-offer">⏰ आज के ऑर्डर सीमित हैं – जल्दी करें ⏰</div>
 
-</div>
+<section class="stats">
+  <div class="stat">📦 India Post Delivery</div>
+  <div class="stat">🔒 100% Prepaid</div>
+  <div class="stat">🌿 Fresh Food Item</div>
+  <div class="stat">⭐ Premium Quality</div>
+</section>
 
-<div class="footer">
-  © 2025 StudyKit India
-</div>
+<section class="form-box" id="form">
+  <h2>📝 ऑर्डर डिटेल्स</h2>
+
+  <!-- ITEM SELECT -->
+  <select id="item">
+    <option value="">कृपया आइटम चुनें</option>
+    <option value="Khoya Tilkut 500g – ₹349">खोया तिलकुट 500g – ₹349</option>
+    <option value="Khoya Tilkut 1kg – ₹549">खोया तिलकुट 1kg – ₹549 ⭐</option>
+    <option value="Til + Chini 500g – ₹329">तिल + चीनी 500g – ₹329</option>
+    <option value="Til + Chini 1kg – ₹529">तिल + चीनी 1kg – ₹529</option>
+  </select>
+
+  <input id="name" placeholder="पूरा नाम">
+  <input id="mobile" placeholder="मोबाइल नंबर">
+  <input id="state" placeholder="राज्य">
+  <input id="district" placeholder="जिला">
+  <input id="block" placeholder="ब्लॉक / शहर / गाँव">
+  <textarea id="address" placeholder="पूरा पता"></textarea>
+  <input id="pincode" placeholder="6 अंकों का पिन कोड" maxlength="6">
+
+  <div class="policy">
+    ⚠️ 100% PREPAID ONLY<br>
+    ❌ COD / Return नहीं है<br>
+    ✔ Payment के बाद ही dispatch होगा<br>
+    💰 UPI: <b>9065885746kumar@ybl</b>
+  </div>
+
+  <button class="whatsapp" onclick="sendWhatsApp()">📲 WhatsApp पर ऑर्डर भेजें</button>
+</section>
+
+<div class="float">ORDER</div>
 
 <script>
-pincode.oninput=function(){
-  this.value=this.value.replace(/\D/g,'');
-};
+setTimeout(()=>{popup.style.display="block"},3000);
+setTimeout(()=>{popup.style.display="none"},6000);
 
-orderForm.onsubmit=function(e){
-  e.preventDefault();
-  if(pincode.value.length!==6){
-    alert("Please enter valid 6 digit pincode");
+function scrollToForm(){
+  form.scrollIntoView({behavior:"smooth"});
+}
+
+function sendWhatsApp(){
+  if(item.value===""){
+    alert("कृपया कौन सा तिलकुट चाहिए, पहले चुनें");
     return;
   }
-  let msg=
-  "StudyKit India Order\n"+
-  "Kit: "+kit.value+"\n"+
-  "Name: "+name.value+"\n"+
-  "Mobile: "+mobile.value+"\n"+
-  "State: "+state.value+"\n"+
-  "District: "+district.value+"\n"+
-  "Block/City: "+block.value+"\n"+
-  "Address: "+address.value+"\n"+
-  "Pincode: "+pincode.value+"\n"+
-  "Note: "+comment.value;
-  window.open("https://wa.me/919065885846?text="+encodeURIComponent(msg));
-};
+
+  let p=pincode.value;
+  if(p.length!=6){
+    alert("6 अंकों का सही पिनकोड डालें");
+    return;
+  }
+
+  let msg=`🟢 नया तिलकुट ऑर्डर
+📦 Item: ${item.value}
+
+नाम: ${name.value}
+मोबाइल: ${mobile.value}
+राज्य: ${state.value}
+जिला: ${district.value}
+ब्लॉक: ${block.value}
+पता: ${address.value}
+पिनकोड: ${p}
+
+Payment: 100% Prepaid`;
+
+  window.open("https://wa.me/919065885746?text="+encodeURIComponent(msg));
+}
 </script>
 
 </body>
