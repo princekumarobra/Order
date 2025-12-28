@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StudyKit India | Student Stationery</title>
+
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:#f4f6f9;
+  color:#1f2937;
+}
+
+/* HEADER */
+.header{
+  background:linear-gradient(135deg,#1e3c72,#2a5298);
+  color:#fff;
+  padding:34px 16px;
+  text-align:center;
+}
+.header h1{margin:0;font-size:40px;font-weight:900}
+.header p{margin-top:8px;font-size:20px;font-weight:900}
+
+/* CONTAINER */
+.container{max-width:1100px;margin:auto;padding:14px}
+
+/* SECTION */
+.section{
+  background:#fff;
+  border-radius:18px;
+  padding:28px;
+  margin:22px 0;
+  box-shadow:0 10px 28px rgba(0,0,0,0.08);
+}
+
+.big{font-size:26px;font-weight:900;color:#1e3c72}
+.bold{font-weight:900}
+
+/* ===== KIT BOX ===== */
+.kits{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
+}
+.kit{
+  background:#fbfdff;
+  border-radius:18px;
+  padding:22px;
+  text-align:center;
+  border:3px solid #dbe6ff;
+  box-shadow:0 12px 26px rgba(30,60,114,0.15);
+}
+.kit h3{
+  font-size:22px;
+  font-weight:900;
+  color:#1e3c72;
+}
+.kit ul{
+  text-align:left;
+  padding-left:18px;
+  font-weight:900;
+}
+.kit li{margin-bottom:6px}
+.price{
+  font-size:34px;
+  font-weight:900;
+  color:#e63946;
+  background:#fff0f0;
+  padding:6px 14px;
+  border-radius:10px;
+  display:inline-block;
+}
+
+/* ===== STATS BOX ===== */
+.stats-new{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:18px;
+}
+.stat-card{
+  background:linear-gradient(135deg,#ffffff,#f1f6ff);
+  border-top:6px solid #1e3c72;
+  border-radius:18px;
+  padding:22px;
+  text-align:center;
+  box-shadow:0 10px 22px rgba(30,60,114,0.15);
+}
+.stat-card span{font-size:36px}
+.stat-card p{
+  margin:6px 0 0;
+  font-size:17px;
+  font-weight:900;
+  color:#1e3c72;
+}
+
+/* FORM */
+input, textarea, select{
+  width:100%;
+  padding:14px;
+  margin:10px 0;
+  font-weight:900;
+  border-radius:10px;
+  border:2px solid #dbe6ff;
+}
+
+/* PAYMENT RULE */
+.rule{
+  background:#fff5f5;
+  border:3px dashed #e63946;
+}
+
+/* BUTTON */
+@keyframes blink{
+  0%{box-shadow:0 0 0 rgba(37,211,102,.4)}
+  50%{box-shadow:0 0 22px rgba(37,211,102,.9)}
+  100%{box-shadow:0 0 0 rgba(37,211,102,.4)}
+}
+.btn{
+  width:100%;
+  background:#25D366;
+  color:#fff;
+  border:none;
+  padding:18px;
+  font-size:20px;
+  font-weight:900;
+  border-radius:14px;
+  cursor:pointer;
+  animation:blink 1.4s infinite;
+}
+
+/* FOOTER */
+.footer{
+  text-align:center;
+  padding:18px;
+  font-size:14px;
+  font-weight:700;
+  color:#6b7280;
+  background:#eef2f7;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+  <h1>StudyKit India</h1>
+  <p>📚 Student Stationery Home Delivery</p>
+</div>
+
+<div class="container">
+
+<!-- INTRO -->
+<div class="section">
+  <p class="big">🔥 EK BAAR LO – PADHAI KA TENSION KHATAM 🔥</p>
+  <p class="bold">School & exam ke liye zaroori stationery ka complete pack, seedha ghar tak delivery.</p>
+</div>
+
+<!-- KIT SECTION -->
+<div class="section">
+  <p class="big">🎒 AVAILABLE STATIONERY KITS</p>
+
+  <div class="kits">
+    <div class="kit">
+      <h3>🟦 STARTER KIT</h3>
+      <ul>
+        <li>✏️ 8 Blue Pens</li>
+        <li>📓 1 Notebook</li>
+        <li>🧽 Eraser + Sharpener</li>
+      </ul>
+      <p class="price">💰 ₹299</p>
+    </div>
+
+    <div class="kit">
+      <h3>⭐ BEST SELLER KIT</h3>
+      <ul>
+        <li>✏️ 10 Blue Pens</li>
+        <li>📓 1 Notebook</li>
+        <li>📐 Geometry Box</li>
+        <li>🧽 Eraser + Sharpener</li>
+      </ul>
+      <p class="price">💰 ₹399</p>
+    </div>
+
+    <div class="kit">
+      <h3>💎 VALUE PACK</h3>
+      <ul>
+        <li>✏️ 15 Blue Pens</li>
+        <li>📓 2 Notebooks</li>
+        <li>📐 Geometry Box</li>
+        <li>📏 Scale + Eraser + Sharpener</li>
+      </ul>
+      <p class="price">💰 ₹499</p>
+    </div>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="section">
+  <div class="stats-new">
+    <div class="stat-card"><span>🚚</span><p>India Post Delivery</p></div>
+    <div class="stat-card"><span>🔒</span><p>100% Prepaid Only</p></div>
+    <div class="stat-card"><span>⭐</span><p>Quality Checked</p></div>
+    <div class="stat-card"><span>📦</span><p>Dispatch in 24 Hours</p></div>
+  </div>
+</div>
+
+<!-- ORDER FORM -->
+<div class="section">
+  <p class="big">🛒 ORDER & DELIVERY DETAILS</p>
+
+  <form id="orderForm">
+    <select id="kit" required>
+      <option value="">Select Kit</option>
+      <option>Starter Kit ₹299</option>
+      <option>Best Seller Kit ₹399</option>
+      <option>Value Pack ₹499</option>
+    </select>
+
+    <input type="text" id="name" placeholder="Full Name" required>
+    <input type="tel" id="mobile" placeholder="Mobile Number" required>
+
+    <!-- TEXT INPUTS -->
+    <input type="text" id="state" placeholder="State (e.g. Bihar)" required>
+    <input type="text" id="district" placeholder="District (e.g. Aurangabad)" required>
+    <input type="text" id="block" placeholder="Block / City / Village" required>
+
+    <textarea id="address" placeholder="House no, road, landmark" required></textarea>
+    <input type="text" id="pincode" placeholder="6 Digit Pincode" maxlength="6" required>
+    <textarea id="comment" placeholder="Any message / review (optional)"></textarea>
+
+    <div class="section rule">
+      <p class="bold">⚠️ 100% PREPAID ONLY</p>
+      <p class="bold">Payment hone ke baad hi dispatch hoga</p>
+    </div>
+
+    <button class="btn" type="submit">📲 CONFIRM ORDER ON WHATSAPP</button>
+  </form>
+</div>
+
+</div>
+
+<div class="footer">
+  © 2025 StudyKit India
+</div>
+
+<script>
+pincode.oninput=function(){
+  this.value=this.value.replace(/\D/g,'');
+};
+
+orderForm.onsubmit=function(e){
+  e.preventDefault();
+  if(pincode.value.length!==6){
+    alert("Please enter valid 6 digit pincode");
+    return;
+  }
+  let msg=
+  "StudyKit India Order\n"+
+  "Kit: "+kit.value+"\n"+
+  "Name: "+name.value+"\n"+
+  "Mobile: "+mobile.value+"\n"+
+  "State: "+state.value+"\n"+
+  "District: "+district.value+"\n"+
+  "Block/City: "+block.value+"\n"+
+  "Address: "+address.value+"\n"+
+  "Pincode: "+pincode.value+"\n"+
+  "Note: "+comment.value;
+  window.open("https://wa.me/919065885846?text="+encodeURIComponent(msg));
+};
+</script>
+
+</body>
+</html>
